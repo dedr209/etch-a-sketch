@@ -15,9 +15,9 @@ const interactWithBlock = (element) => {
     if (!element.style.backgroundColor) {
         element.style.backgroundColor = `rgb(${getRandomRGBValue()}, ${getRandomRGBValue()} ,${getRandomRGBValue()})`;
     }
-    let opacity = element.style.opacity ? parseFloat(element.style.opacity) : 1;
-    if (opacity >= 0.1) {
-        element.style.opacity = `${opacity - 0.1}`;
+    let opacity = element.style.opacity ? parseFloat(element.style.opacity) : 0;
+    if (opacity <= 0.9) {
+        element.style.opacity = `${opacity + 0.1}`;
     }
 };
 
