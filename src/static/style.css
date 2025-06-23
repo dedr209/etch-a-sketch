@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: aqua;
+    height: 100vh;
+}
+.grid-info{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 20px;
+    background: #fff;
+}
+.sketch-container {
+    padding: 20px 0;
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.etch-e-sketch {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    background-color: antiquewhite;
+
+}
+
+.drawing-area {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    margin: 20px;
+}
+
+.drawing-block {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+}
+
+.active-element {
+
+}
+
+#regenerate-board {
+    font-size: 32px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    border-width: 0;
+    margin-bottom: 10px;
+}
+
+#drawing-mode-select {
+    width: 80%;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.mode-block {
+    label {
+        font-size: 20px;
+        text-decoration: underline;
+        padding: 10px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.popout {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button.popout:hover {
+    background-color: darkblue;
+}
+
+.change-grid {
+    margin-bottom: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.errors-block{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    color: red;
+    width: 600px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+#regenerate-board{
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    background-color: red;
+}
+#regenerate-board:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
